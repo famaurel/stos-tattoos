@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@rails/ujs": "^7.0.4-3",
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.7.0",
+    "poppers.js": "^1.16.1"
+  }
+}
