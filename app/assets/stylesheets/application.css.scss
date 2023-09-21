@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+@import "font-awesome";
+
 body {
     background: black;
     margin: 0px;
@@ -25,6 +28,15 @@ h1, p {
 
 a {
     text-decoration: none;
+}
+
+i {
+    color: white;
+    font-size: 50px;
+}
+
+i:hover {
+    color: grey;
 }
 
 .bouton {
