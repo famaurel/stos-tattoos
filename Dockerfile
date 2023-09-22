@@ -23,10 +23,9 @@ RUN apt-get update -qq && \
 ARG NODE_VERSION=14
 ARG YARN_VERSION=1.22.11
 ENV PATH=/usr/local/node/bin:$PATH
-RUN curl -sL https://github.com/nodenv/node-build/archive/master.tar.gz | tar xz -C /tmp/ && \
-    /tmp/node-build-master/bin/node-build "${NODE_VERSION}" /usr/local/node && \
-    npm install -g yarn@$YARN_VERSION && \
-    rm -rf /tmp/node-build-master
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
+    apt-get install -y nodejs && \
+    npm install -g yarn@$YARN_VERSION
 
 # Throw-away build stage to reduce size of final image
 # ...
