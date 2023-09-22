@@ -1,3 +1,10 @@
 const { environment } = require('@rails/webpacker')
 
-module.exports = environment
+environment.config.merge({
+  entry: {
+    application: './app/javascript/application.js', // Example entry point
+    // Add more entry points if needed
+  },
+});
+
+module.exports = environment;
