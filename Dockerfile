@@ -1,7 +1,7 @@
 ARG RUBY_VERSION=3.2.2
 
 # syntax = docker/dockerfile:1
-FROM ruby:$RUBY_VERSION-slim as base
+FROM ruby:${RUBY_VERSION}-slim as base
 
 # Rails app lives here
 WORKDIR /rails
@@ -23,9 +23,9 @@ RUN apt-get update -qq && \
 ARG NODE_VERSION=14
 ARG YARN_VERSION=1.22.11
 ENV PATH=/usr/local/node/bin:$PATH
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
-    apt-get install -y nodejs && \
-    npm install -g yarn@$YARN_VERSION
+RUN curl -sL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash - && \
+    apt-get install -y nodejs npm && \
+    npm install -g yarn@${YARN_VERSION}
 
 # Throw-away build stage to reduce size of final image
 # ...
