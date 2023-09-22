@@ -1,12 +1,12 @@
 {
+  "private": true,
   "dependencies": {
     "@rails/ujs": "^7.0.4-3",
     "@rails/webpacker": "5.4.4",
-    "bootstrap": "^5.2.3",
-    "jquery": "^3.7.0",
+    "bootstrap": "^5.3.2",
+    "jquery": "^3.7.1",
     "popper.js": "^1.16.1",
     "poppers.js": "^1.16.1",
-    "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
