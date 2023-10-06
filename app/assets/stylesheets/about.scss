@@ -1,3 +1,17 @@
 .about-text {
     width: 50%;
 }
+
+@media screen and (max-width: 820px) {
+    .about {
+    	display: block;
+    }
+    .about-text {
+    	width: 100%;
+    }
+    .about-picture {
+    	img {
+    		width: 100%;
+    	}
+    }
+}

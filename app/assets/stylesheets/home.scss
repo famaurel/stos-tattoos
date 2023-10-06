@@ -81,3 +81,36 @@ i:hover {
 .retour {
     margin: 80px 0;
 }
+
+.footer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    i, p {
+        padding: 10px;
+    }
+    i {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .banner img {
+        width: 200px;
+    }
+    .tattoo {
+        width: 33%;
+    } 
+    .tattoo img {
+        width: 100%;
+    }
+    .tattoo h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .tattoo h1 {
+    font-size: 1em;
+    }
+}

@@ -7,3 +7,17 @@
 		color: grey;
 	}
 }
+
+@media screen and (max-width: 820px) {
+    .contact {
+    	display: block;
+    }
+    .contact-text {
+    	width: 100%;
+    }
+    .contact-picture {
+    	img {
+    		width: 100%;
+    	}
+    }
+}
