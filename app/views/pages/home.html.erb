@@ -4,18 +4,22 @@
 	</div>
 	<div class="menu">
 		<div class="tattoo">
-			<%= image_tag "panther.png" %>
-			<h1>
-				<%= link_to("About me", about_path) %>	
-			</h1>
+			<%= link_to about_path do %>
+				<%= image_tag "panther.png" %>
+				<h1>A propos</h1>
+			<% end %>
 		</div>
 		<div class="tattoo">
-			<%= image_tag "flower.png" %>
-			<h1><%= link_to("My work", work_path) %></h1>
+			<%= link_to work_path do %>
+				<%= image_tag "flower.png" %>
+				<h1>Mon travail</h1>
+			<% end %>
 		</div>
 		<div class="tattoo">
-			<%= image_tag "skull.png" %>
-			<h1><%= link_to("Contact", contact_path) %></h1>
+			<%= link_to contact_path do %>
+				<%= image_tag "skull.png" %>
+				<h1>Contact</h1>
+			<% end %>
 		</div>
 	</div>
 </div>

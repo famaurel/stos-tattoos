@@ -1,0 +1,83 @@
+body {
+    background: black;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, p {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: white;
+    font-size: 50px;
+}
+
+i:hover {
+    color: grey;
+}
+
+.bouton {
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    background: white;
+    margin: 0 auto;
+}
+
+.bouton p {
+    line-height: 35px;
+}
+
+.bouton a {
+    color: black;
+}
+
+.bouton:hover {
+    background: grey;
+}
+
+.title {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.menu, .contact, .about {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.tattoo {
+    margin: 0 auto;
+    opacity: 1;
+}
+
+.tattoo:hover {
+    opacity: 0.9;
+}
+
+.tattoo h1 {
+    position: relative;
+    bottom: 70%;
+    background: black;
+}
+
+.tattoo a {
+    color: white;
+}
+
+.tattoo a:hover {
+    color: grey;
+}
+
+.retour {
+    margin: 80px 0;
+}
